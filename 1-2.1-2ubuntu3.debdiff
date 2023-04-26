@@ -1,0 +1,61 @@
+diff -Nru hello-2.10/2cd hello-2.10/2cd
+--- hello-2.10/2cd	2023-04-25 12:00:41.000000000 -0700
++++ hello-2.10/2cd	1969-12-31 16:00:00.000000000 -0800
+@@ -1 +0,0 @@
+-this is a test from Leonardo Ventura
+diff -Nru hello-2.10/debian/changelog hello-2.10/debian/changelog
+--- hello-2.10/debian/changelog	2023-04-25 12:00:41.000000000 -0700
++++ hello-2.10/debian/changelog	2019-05-22 21:53:15.000000000 -0700
+@@ -1,9 +1,3 @@
+-hello (2.10-2ubuntu3) focal; urgency=medium
+-
+-  * Adding preinst script and an executable bash script called "testing.sh"
+-
+- -- Leonardo Ventura <leoven4@ubuntu>  Tue, 25 Apr 2023 12:00:41 -0700
+-
+ hello (2.10-2ubuntu2) eoan; urgency=medium
+ 
+   * Handle exit code 77 for skipped autopkgtests.
+diff -Nru hello-2.10/debian/install hello-2.10/debian/install
+--- hello-2.10/debian/install	2023-04-25 11:58:07.000000000 -0700
++++ hello-2.10/debian/install	1969-12-31 16:00:00.000000000 -0800
+@@ -1 +0,0 @@
+-testing.sh usr/bin
+\ No newline at end of file
+diff -Nru hello-2.10/debian/preinst hello-2.10/debian/preinst
+--- hello-2.10/debian/preinst	2023-04-25 11:49:15.000000000 -0700
++++ hello-2.10/debian/preinst	1969-12-31 16:00:00.000000000 -0800
+@@ -1,3 +0,0 @@
+-#!bin/bash
+-
+-echo "this is a test from Leonardo Ventura"
+\ No newline at end of file
+diff -Nru hello-2.10/debian/source/format hello-2.10/debian/source/format
+--- hello-2.10/debian/source/format	2023-04-25 12:00:41.000000000 -0700
++++ hello-2.10/debian/source/format	2019-05-13 15:11:47.000000000 -0700
+@@ -1 +1 @@
+-3.0 (native)
++3.0 (quilt)
+diff -Nru hello-2.10/.pc/.quilt_patches hello-2.10/.pc/.quilt_patches
+--- hello-2.10/.pc/.quilt_patches	2023-04-25 11:44:29.000000000 -0700
++++ hello-2.10/.pc/.quilt_patches	1969-12-31 16:00:00.000000000 -0800
+@@ -1 +0,0 @@
+-debian/patches
+diff -Nru hello-2.10/.pc/.quilt_series hello-2.10/.pc/.quilt_series
+--- hello-2.10/.pc/.quilt_series	2023-04-25 11:44:29.000000000 -0700
++++ hello-2.10/.pc/.quilt_series	1969-12-31 16:00:00.000000000 -0800
+@@ -1 +0,0 @@
+-series
+diff -Nru hello-2.10/.pc/.version hello-2.10/.pc/.version
+--- hello-2.10/.pc/.version	2023-04-25 11:44:29.000000000 -0700
++++ hello-2.10/.pc/.version	1969-12-31 16:00:00.000000000 -0800
+@@ -1 +0,0 @@
+-2
+diff -Nru hello-2.10/testing.sh hello-2.10/testing.sh
+--- hello-2.10/testing.sh	2023-04-25 12:00:41.000000000 -0700
++++ hello-2.10/testing.sh	1969-12-31 16:00:00.000000000 -0800
+@@ -1,3 +0,0 @@
+-#!/bin/sh
+-
+-echo "this is a test from Leonardo Ventura" >&2
+\ No newline at end of file
